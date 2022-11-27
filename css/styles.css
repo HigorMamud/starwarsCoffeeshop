@@ -97,6 +97,17 @@ hr {
   opacity: 0.25;
 }
 
+h1::after {
+  background-color: black;
+  font-size: 48px;
+  color: yellow;
+  padding: 2px 0 10px 0;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 hr:not([size]) {
   height: 1px;
 }
@@ -11357,6 +11368,8 @@ p {
 .bg-faded {
   background-color: #000;
   color: #ffff00;
+  position: relative;
+  top: -150px;
 }
 
 .btn-xl {
@@ -11370,7 +11383,9 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
+  position: relative;
+  top: -80px;
+  background-color: black;
   font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 #mainNav .navbar-brand {
@@ -11414,10 +11429,11 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2F170FE6;
+  background-color: black;
 }
 .cta .cta-inner {
   position: relative;
+  top: -200px;
   padding: 3rem;
   margin: 0.5rem;
   
@@ -11430,12 +11446,11 @@ p {
   bottom: -0.5rem;
   left: -0.5rem;
   right: -0.5rem;
-  border: 0.25rem solid rgba(255, 255, 255, 0.85);
   z-index: -1;
 }
 
 .footer {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: black;
 }
 
 .intro {
@@ -11510,4 +11525,13 @@ p {
   font-size: 1.2rem;
 }
 
-
+h1:after{
+    background-color: black;
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+    background: linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  }

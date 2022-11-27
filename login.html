@@ -1,109 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Cafeteria SKYWALKER</title>
-    <link rel="icon" type="image/x-icon" href="assets/iconHome.jpg" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/cadastro.css" rel="stylesheet" />
-    </head>
-    <body>
-        <header>
-            <h1 class="site-heading text-center text-faded d-none d-lg-block">
-                <span class="site-heading-upper text-primary mb-3">Preenha os campos com os dados corretos</span><br>
-                <span class="site-heading-lower">Para darmos inicio a essa grande aventura</span>
-            </h1>
-            </header>
-            <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-                <div class="container">
-                    <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Start Bootstrap</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Home</a></li>
-                            <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">Sobre</a></li>
-                            <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">Produtos</a></li>
-                            <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">Loja</a></li>
-                            </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="container" >
-                <a class="links" id="paracadastro"></a>
-                <a class="links" id="paralogin"></a>
-                 
-                <div class="content">      
-                  <!--FORMULÁRIO DE LOGIN-->
-                  <div id="login">
-                    <form method="post" action=""> 
-                      <h1>Login</h1> 
-                      <p> 
-                        <label for="nome_login">Seu nome</label>
-                        <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. contato@htmlecsspro.com"/>
-                      </p>
-                       
-                      <p> 
-                        <label for="email_login">Sua senha</label>
-                        <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
-                      </p>
-                       
-                      <p> 
-                        <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
-                        <label for="manterlogado">Manter-me logado</label>
-                      </p>
-                       
-                      <p> 
-                        <input type="submit" value="Logar" /> 
-                      </p>
-                       
-                      <p class="link">
-                        Ainda não tem conta?
-                        <a href="#paracadastro">Cadastre-se</a>
-                      </p>
-                    </form>
-                  </div>
-             
-                  <!--FORMULÁRIO DE CADASTRO-->
-                  <div id="cadastro">
-                    <form method="post" action=""> 
-                      <h1>Cadastro</h1> 
-                       
-                      <p> 
-                        <label for="nome_cad">Seu nome</label>
-                        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
-                      </p>
-                       
-                      <p> 
-                        <label for="email_cad">Seu e-mail</label>
-                        <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
-                      </p>
-                       
-                      <p> 
-                        <label for="senha_cad">Sua senha</label>
-                        <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
-                      </p>
-                       
-                      <p> 
-                        <input type="submit" value="Cadastrar"/> 
-                      </p>
-                       
-                      <p class="link">  
-                        Já tem conta?
-                        <a href="#paralogin"> Ir para Login </a>
-                      </p>
-                    </form>
-                  </div>
-                </div>
-              </div>  
-         
-       
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Cafeteria SKYWALKER</title>
+  <link rel="icon" type="image/x-icon" href="assets/iconHome.jpg" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link
+    href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/cadastro.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1 class="site-heading text-center text-faded d-none d-lg-block">
+        <span class="site-heading-upper text-primary mb-3">Que a força do café esteja com você</span><br>
+        <span class="site-heading-lower">Cafeteria SKYWALKER</span>
+    </h1>
+</header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div id="menus">
+      <div class="container">
+        <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">HOME</a>
+             class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">SOBRE</a>
+             class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="products.html">PRODUTOS</a>
+             class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="store.html">LOJA</a></li> <br><br>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+
+    <div class="content">
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form method="post" action="">
+          <h1>Login</h1>
+          <p>
+            <label for="nome_login">Seu nome</label>
+            <input id="nome_login" name="nome_login" required="required" type="text"
+              placeholder="ex. contato@htmlecsspro.com" />
+          </p>
+
+          <p>
+            <label for="email_login">Sua senha</label>
+            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" />
+          </p>
+
+          <p>
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+
+          <div id="botoes">
+            <p >
+              <a href="perfil.html" style="color: yellow"> Logar </a>
+              
+            </p>
+            </div>
+
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action="">
+          <h1>Cadastro</h1>
+
+          <p>
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+          </p>
+
+          <p>
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email"
+              placeholder="contato@htmlecsspro.com" />
+          </p>
+
+          <p>
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234" />
+          </p>
+
+          <div id="botoes">
+          <p >
+            <a href="perfil.html" style="color: yellow"> Cadastrar </a>
+            
+          </p>
+          </div>
+          <p class="link">
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
 </body>
+
 </html>
